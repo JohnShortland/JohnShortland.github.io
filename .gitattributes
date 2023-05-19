@@ -1,0 +1,208 @@
+# Set default behaviour to automatically normalize line endings.
+* text=auto
+
+# Scripts
+*.bash     text eol=lf
+*.fish     text eol=lf
+*.sh       text eol=lf
+*.zsh      text eol=lf
+# These are explicitly windows files and should use crlf
+*.bat      text eol=crlf
+*.cmd      text eol=crlf
+
+# PowerShell
+*.ps1      text eol=crlf
+*.ps1x     text eol=crlf
+*.psm1     text eol=crlf
+*.psd1     text eol=crlf
+*.ps1xml   text eol=crlf
+*.pssc     text eol=crlf
+*.psrc     text eol=crlf
+*.cdxml    text eol=crlf
+
+# Serialisation
+*.json     text eol=lf
+*.toml     text eol=lf
+*.xml      text eol=lf
+*.yaml     text eol=lf
+*.yml      text eol=lf
+
+# RC files (like .babelrc or .eslintrc)
+*.*rc      text eol=lf
+
+# Ignore files (like .npmignore or .gitignore)
+*.*ignore  text eol=lf
+
+# Text files where line endings should be preserved
+*.patch    -text
+
+# Java
+*.java          text diff=java
+*.kt            text diff=kotlin
+*.groovy        text diff=java
+*.scala         text diff=java
+*.gradle        text diff=java
+*.gradle.kts    text diff=kotlin
+
+# Java binary files
+*.class         binary
+*.dll           binary
+*.ear           binary
+*.jar           binary
+*.so            binary
+*.war           binary
+*.jks           binary
+
+# These files are text and should be normalized (Convert crlf => lf)
+*.css           text diff=css
+*.scss          text diff=css
+*.sass          text
+*.df            text
+*.htm           text diff=html
+*.html          text diff=html
+*.js            text
+*.jsp           text
+*.jspf          text
+*.jspx          text
+*.properties    text
+*.tld           text
+*.tag           text
+*.tagx          text
+*.xml           text
+*.php           text diff=php
+
+# Docker
+Dockerfile        text
+
+# Python
+*.pxd    text diff=python
+*.py     text diff=python
+*.py3    text diff=python
+*.pyw    text diff=python
+*.pyx    text diff=python
+*.pyz    text diff=python
+*.pyi    text diff=python
+
+# Python binary files
+*.db     binary
+*.p      binary
+*.pkl    binary
+*.pickle binary
+*.pyc    binary export-ignore
+*.pyo    binary export-ignore
+*.pyd    binary
+
+# Jupyter notebook
+*.ipynb  text eol=lf
+
+# Swift
+*.pbxproj merge=union
+*.swift   text diff=swift
+
+# SQL files
+*.sql linguist-detectable=true
+*.sql linguist-language=sql
+
+# Documentation
+*.ipynb           text eol=lf
+*.markdown        text diff=markdown
+*.md              text diff=markdown
+*.mdwn            text diff=markdown
+*.mdown           text diff=markdown
+*.mkd             text diff=markdown
+*.mkdn            text diff=markdown
+*.mdtxt           text
+*.mdtext          text
+*.txt             text
+AUTHORS           text
+CHANGELOG         text
+CHANGES           text
+CONTRIBUTING      text
+COPYING           text
+copyright         text
+*COPYRIGHT*       text
+INSTALL           text
+license           text
+LICENSE           text
+NEWS              text
+readme            text
+*README*          text
+TODO              text
+
+# Templates
+*.dot             text
+*.ejs             text
+*.erb             text
+*.haml            text
+*.handlebars      text
+*.hbs             text
+*.hbt             text
+*.jade            text
+*.latte           text
+*.mustache        text
+*.njk             text
+*.phtml           text
+*.svelte          text
+*.tmpl            text
+*.tpl             text
+*.twig            text
+*.vue             text
+
+# Configs
+*.cnf             text
+*.conf            text
+*.config          text
+.editorconfig     text
+.env              text
+.gitconfig        text
+.htaccess         text
+*.lock            text -diff
+package.json      text eol=lf
+package-lock.json text eol=lf -diff
+pnpm-lock.yaml    text eol=lf -diff
+.prettierrc       text
+yarn.lock         text -diff
+*.toml            text
+browserslist      text
+Makefile          text
+makefile          text
+
+# Exclude files from exporting
+.gitattributes export-ignore
+.gitignore     export-ignore
+.gitkeep       export-ignore
+
+# Graphics
+*.ai              binary
+*.bmp             binary
+*.eps             binary
+*.gif             binary
+*.gifv            binary
+*.ico             binary
+*.jng             binary
+*.jp2             binary
+*.jpg             binary
+*.jpeg            binary
+*.jpx             binary
+*.jxr             binary
+*.pdf             binary
+*.png             binary
+*.psb             binary
+*.psd             binary
+*.svg             binary
+*.svgz            binary
+*.tif             binary
+*.tiff            binary
+*.wbmp            binary
+*.webp            binary
+
+# Fonts
+*.ttf             binary
+*.eot             binary
+*.otf             binary
+*.woff            binary
+*.woff2           binary
+
+# Executables
+*.exe             binary
+*.pyc             binary
